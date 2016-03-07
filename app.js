@@ -9,10 +9,9 @@ var server = http.createServer(app);
 
 app.get('/capture.jpg', function(req, res) {
 	var cmd = "gphoto2 --capture-image-and-download --stdout";
-	exec(cmd, function(error, stdout, stderror){
-			res.header('Content-Type', 'image/jpeg');
-			res.send(new Buffer(stdout, 'binary'));
-	})
+	var child = spawn('gphoto2 --capture-image-and-download --stdout');
+
+	child.stdout.pipe(req);
 });
 
 server.listen('8081', function(){
