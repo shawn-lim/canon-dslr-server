@@ -1,0 +1,23 @@
+{
+  "name": "canon-dslr-server",
+  "version": "1.0.0",
+  "description": "Author: Shawn L Email: _shawn@outlook.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn-lim/canon-dslr-server.git"
+  },
+  "author": "Shawn L",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shawn-lim/canon-dslr-server/issues"
+  },
+  "homepage": "https://github.com/shawn-lim/canon-dslr-server#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "http": "0.0.0"
+  }
+}
